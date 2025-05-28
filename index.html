@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hugo Cossart – Portfolio</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #343C49;
+            margin: 0; padding: 0;
+            color: #E1E6EB;
+        }
+        .footer {
+            margin-top: 14px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1, h2 {
+            margin-bottom: 0.5em;
+            color: #E1E6EB;
+        }
+        a {
+            color: #73A1FF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header, footer {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #A9B1C1;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: #3F4759;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(0 0 0 / 0.3);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgb(0 0 0 / 0.5);
+        }
+        .project-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            filter: brightness(0.9);
+        }
+        .project-content {
+            padding: 15px 20px;
+            flex-grow: 1;
+        }
+        .project-title {
+            margin: 0 0 10px;
+            font-size: 1.3em;
+            color: #E1E6EB;
+        }
+        .project-desc {
+            margin: 0;
+            color: #C0C6D4;
+            flex-grow: 1;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #73A1FF;
+            box-shadow: 0 0 8px rgba(115, 161, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <img src="/images/profil.png" alt="Photo de Hugo Cossart" class="profile-img" />
+        <h1>Hugo Cossart</h1>
+        <p><strong>GitHub :</strong>
+            <a href="https://github.com/Ugonet" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#73A1FF" viewBox="0 0 24 24" style="vertical-align: middle;">
+                    <path d="M12 .297a12 12 0 00-3.794 23.412c.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.754-1.333-1.754-1.09-.744.083-.729.083-.729 1.205.085 1.838 1.238 1.838 1.238 1.07 1.835 2.807 1.305 3.492.997.108-.775.418-1.305.76-1.605-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.124-.303-.535-1.527.117-3.176 0 0 1.007-.322 3.3 1.23a11.46 11.46 0 016 0c2.29-1.553 3.294-1.23 3.294-1.23.653 1.65.243 2.873.12 3.176.77.84 1.232 1.91 1.232 3.22 0 4.61-2.8 5.625-5.475 5.922.43.37.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .32.218.694.825.576A12 12 0 0012 .297z"/>
+                </svg>
+                github.com/Ugonet
+            </a>
+        </p>
+
+        <p><strong>CV :</strong>
+            <a href="/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#73A1FF" viewBox="0 0 24 24" style="vertical-align: middle;">
+                    <path d="M6 2a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6H6zM7 4h7v5h5v11H7V4z"/>
+                </svg>
+                Télécharger le CV (PDF)
+            </a>
+        </p>
+        <p>
+            Passionné par le développement, je touche à tout type de projets.
+            J’installe et configure mes propres serveurs, gère l’hébergement et administre mon réseau.
+            J’aime aussi analyser le fonctionnement interne des systèmes pour développer mes propres outils.
+        </p>
+    </header>
+
+    <section>
+        <h2>Projets</h2>
+        <div class="projects-grid">
+            <a href="/projets/campusconnect/" class="project-card" target="_blank" rel="noopener noreferrer">
+                <img src="/projets/campusconnect/images/illustration.png" alt="CampusConnect" class="project-img" />
+                <div class="project-content">
+                    <h3 class="project-title">CampusConnect</h3>
+                    <p class="project-desc">
+                        Application mobile en React pour les étudiants de l’IUT de Lens (Université d’Artois).
+                        Centralise emploi du temps, notes, mails et notifications pour simplifier leur quotidien.
+                    </p>
+                </div>
+            </a>
+            <a href="/projets/rebornapi/" class="project-card" target="_blank" rel="noopener noreferrer">
+                <img src="/projets/rebornapi/images/illustration.png" alt="Reborn API" class="project-img" />
+                <div class="project-content">
+                    <h3 class="project-title">Reborn API</h3>
+                    <p class="project-desc">
+                        API personnalisée développée via reverse engineering pour accéder au système d’inventaire
+                        SumUp du Bureau des étudiants, permettant l’affichage en temps réel des stocks et prix sur écran.
+                    </p>
+                </div>
+            </a>
+            <a href="/projets/pronet/" class="project-card" target="_blank" rel="noopener noreferrer">
+                <img src="/projets/pronet/images/illustration.png" alt="ProNet" class="project-img" />
+                <div class="project-content">
+                    <h3 class="project-title">ProNet</h3>
+                    <p class="project-desc">
+                        Application complémentaire à Pronote qui, via un proxy interne, permet de modifier l’emploi du temps et d’autres infos.
+                        Offre aussi la possibilité d’appliquer un thème CSS personnalisé à l’interface.
+                    </p>
+                </div>
+            </a>
+            <a href="/projets/voltshift/" class="project-card" target="_blank" rel="noopener noreferrer">
+                <img src="/projets/voltshift/images/illustration.png" alt="VoltShift" class="project-img" />
+                <div class="project-content">
+                    <h3 class="project-title">VoltShift</h3>
+                    <p class="project-desc">
+                        Extension basée sur un proxy qui modifie les requêtes du site Voltaire,
+                        après un reverse engineering, permet de contourner la limitation d'attente de 36h entre deux tests.
+                    </p>
+                </div>
+            </a>
+            <a href="/projets/psconnect/" class="project-card" target="_blank" rel="noopener noreferrer">
+                <img src="/projets/psconnect/images/illustration.png" alt="PSconnect" class="project-img" />
+                <div class="project-content">
+                    <h3 class="project-title">PSconnect</h3>
+                    <p class="project-desc">
+                        Application mobile NFC pour un camping permettant de lire les badges douche des campeurs,
+                        gérer les jetons et ajouter des crédits, développée après un reverse engineering des bracelets RFID.
+                    </p>
+                </div>
+            </a>
+            <a href="/projets/eco2stat/" class="project-card" target="_blank" rel="noopener noreferrer">
+                <img src="/projets/eco2stat/images/illustration.png" alt="ECO²Stat" class="project-img" />
+                <div class="project-content">
+                    <h3 class="project-title">ECO²Stat</h3>
+                    <p class="project-desc">
+                        Projet scolaire mêlant électronique et programmation : des boîtiers relevants la qualité de l’air dans plusieurs zones stratégiques du lycée (cantine, CDI, foyer, extérieur).
+                        Les données sont centralisées et affichées sur une carte interactive avec des zones colorées, exportables pour analyses.
+                    </p>
+                </div>
+            </a>
+            <a href="/projets/wordshakerbooster/" class="project-card" target="_blank" rel="noopener noreferrer">
+                <img src="/projets/wordshakerbooster/images/illustration.png" alt="WordShaker Booster" class="project-img" />
+                <div class="project-content">
+                    <h3 class="project-title">WordShaker Booster</h3>
+                    <p class="project-desc">
+                        Outil qui liste tous les mots valides pris en charge par la grille de Word Shaker, pour optimiser son score et maximiser les points en jeu.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        © 2025 Hugo Cossart
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CampusConnect – Hugo Cossart</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #343C49;
+            color: #E1E6EB;
+            margin: 0;
+            padding: 20px;
+        }
+
+        a {
+            color: #73A1FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #E1E6EB;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .back-link {
+            margin-top: 30px;
+            display: block;
+            color: #A9B1C1;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .screenshots img {
+            width: calc(50% - 8px);
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 600px) {
+            .screenshots img {
+                width: 100%;
+            }
+        }
+
+        ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="/" class="back-link">← Retour au portfolio</a>
+    <h1>CampusConnect</h1>
+    <img src="./images/illustration.png" alt="Illustration de l'application CampusConnect" class="main-image">
+
+    <p><strong>Technos utilisées :</strong> React, API Flask (Python), MariaDB</p>
+
+    <p><strong>Description :</strong></p>
+    <p>
+        CampusConnect est une application mobile développée spécialement pour les étudiants de l’IUT de Lens
+        (Université d’Artois). Conçue sous forme de Progressive Web App (PWA), elle permet aux étudiants d’accéder en
+        un seul endroit à toutes les informations utiles de leur quotidien universitaire.
+    </p>
+
+    <h2>Fonctionnalités principales</h2>
+    <ul>
+        <li>📅 Visualisation en temps réel de l’emploi du temps universitaire</li>
+        <li>📝 Accès aux notes et aux résultats académiques</li>
+        <li>📬 Consultation rapide des mails via la messagerie universitaire</li>
+        <li>🔔 Ajout d’un système de notifications pour les nouveaux emails (fonctionnalité actuellement absente des outils fournis par l’université)</li>
+    </ul>
+
+    <h2>Une interface familière et efficace</h2>
+    <p>
+        L’interface s’inspire de l’ergonomie de Pronote, avec une navigation fluide et intuitive. L’objectif est de
+        proposer une expérience simple, claire et fonctionnelle, adaptée aux habitudes des étudiants.
+    </p>
+
+    <h2>Objectif du projet</h2>
+    <p>
+        Le projet répond à un besoin concret : faciliter l’accès aux outils numériques de l’université dans une seule
+        application moderne. Le développement s’est appuyé sur un travail de reverse engineering des services internes
+        afin d’assurer une intégration fluide avec l’environnement numérique de l’université.
+    </p>
+
+    <h2>Captures d’écran</h2>
+    <div class="screenshots">
+        <img src="./images/screenshot1.png" alt="Capture d’écran 1 de l’application">
+    </div>
+</div>
+</body>
+</html>
