@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Eco²stat – Hugo Cossart</title>
+    <title>Reborn API – Hugo Cossart</title>
     <style>
         body {
             font-family: system-ui, sans-serif;
@@ -58,11 +58,9 @@
         }
 
         .screenshots img {
-            flex: 1 1 calc(50% - 8px);
-            height: auto;
+            width: calc(50% - 8px);
             border-radius: 12px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-            object-fit: contain; /* optionnel */
         }
 
         @media (max-width: 600px) {
@@ -81,47 +79,32 @@
 <body>
 <div class="container">
     <a href="/" class="back-link">← Retour au portfolio</a>
-    <h1>Eco²stat</h1>
-    <img src="./images/illustration.png" alt="Illustration de Eco²stat" class="main-image">
+    <h1>Reborn API</h1>
+    <img src="./images/illustration.png" alt="Illustration de Reborn API" class="main-image">
 
-    <p><strong>Projet scolaire mêlant électronique et programmation :</strong></p>
+    <p><strong>Technos utilisées :</strong> React, API Flask (Python)</p>
+
+    <p><strong>Description :</strong></p>
     <p>
-        Des boîtiers relevants la qualité de l’air dans plusieurs zones stratégiques du lycée (cantine, CDI, foyer, extérieur).
-        Les données sont centralisées et affichées sur une carte interactive avec des zones colorées, exportables pour analyses.
+        Reborn API est une API personnalisée conçue à partir d’un travail de reverse engineering sur le système d’inventaire SumUp utilisé par le Bureau des Étudiants. Elle permet d’extraire en temps réel les données de stock et de prix, et de les afficher dynamiquement sur un écran connecté, facilitant la gestion des ventes lors d'événements étudiants.
     </p>
-
-    <h2>Zones surveillées</h2>
-    <ul>
-        <li>Cantine</li>
-        <li>CDI</li>
-        <li>Foyer</li>
-        <li>Extérieur</li>
-    </ul>
 
     <h2>Fonctionnalités principales</h2>
     <ul>
-        <li>🌡️ Collecte de données de qualité de l’air (température, humidité, CO₂, etc.)</li>
-        <li>📡 Transmission sans fil vers une base centrale</li>
-        <li>🗺️ Affichage des données en temps réel sur une carte interactive avec code couleur selon la qualité</li>
-        <li>📊 Export des données pour analyses et suivi</li>
+        <li>📦 Accès en temps réel aux stocks et prix de nos produits via SumUp</li>
+        <li>💸 Affichage automatique des prix actualisés en temps réel sur écran au fil des ventes</li>
+        <li>⚙️ Intégration simplifiée avec des interfaces frontend React</li>
+        <li>🔐 API sécurisée et optimisée pour un usage sur plusieurs appareils en synchronisé</li>
     </ul>
 
-    <h2>Technologies utilisées</h2>
-    <ul>
-        <li>Arduino et capteurs environnementaux (DHT11, capteurs CO₂)</li>
-        <li>Communication radio 433 MHz</li>
-        <li>Développement web pour la carte interactive</li>
-        <li>Impression 3D pour les boîtiers</li>
-    </ul>
-
-    <h2>Équipe</h2>
-    <p>Hugo Cossart, Fabien Gaffé, Nathan Ammeaux</p>
+    <h2>Objectif du projet</h2>
+    <p>
+        L’objectif de Reborn API est de rendre plus accessible et automatisée la présentation des produits en vente au sein du BDE. Le système SumUp ne proposant pas de solution publique adaptée, un reverse engineering a permis de créer une passerelle fiable entre l’interface de gestion SumUp et les besoins spécifiques du BDE, tout en assurant la sécurité qui était nécessaire.
+    </p>
 
     <h2>Captures d’écran</h2>
     <div class="screenshots">
-        <img src="./images/screenshot1.png" alt="Capture d’écran 1">
-        <img src="./images/screenshot2.png" alt="Capture d’écran 2">
-        <img src="./images/screenshot3.png" alt="Capture d’écran 3">
+        <img src="./images/screenshot1.png" alt="Capture d’écran 1 de l’application">
     </div>
 </div>
 </body>

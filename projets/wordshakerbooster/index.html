@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Eco²stat – Hugo Cossart</title>
+    <title>WordShaker Booster – Hugo Cossart</title>
     <style>
         body {
             font-family: system-ui, sans-serif;
@@ -58,11 +58,9 @@
         }
 
         .screenshots img {
-            flex: 1 1 calc(50% - 8px);
-            height: auto;
+            width: calc(50% - 8px);
             border-radius: 12px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-            object-fit: contain; /* optionnel */
         }
 
         @media (max-width: 600px) {
@@ -81,47 +79,27 @@
 <body>
 <div class="container">
     <a href="/" class="back-link">← Retour au portfolio</a>
-    <h1>Eco²stat</h1>
-    <img src="./images/illustration.png" alt="Illustration de Eco²stat" class="main-image">
+    <h1>CampusConnect</h1>
+    <img src="./images/illustration.png" alt="Illustration de l'application CampusConnect" class="main-image">
 
-    <p><strong>Projet scolaire mêlant électronique et programmation :</strong></p>
-    <p>
-        Des boîtiers relevants la qualité de l’air dans plusieurs zones stratégiques du lycée (cantine, CDI, foyer, extérieur).
-        Les données sont centralisées et affichées sur une carte interactive avec des zones colorées, exportables pour analyses.
+    <p><strong>Technos utilisées :</strong> JavaScript, HTML, CSS</p>
+
+    <p class="project-desc">
+        Outil qui liste tous les mots valides pris en charge par la grille de Word Shaker, pour optimiser son score et maximiser les points en jeu.
     </p>
-
-    <h2>Zones surveillées</h2>
-    <ul>
-        <li>Cantine</li>
-        <li>CDI</li>
-        <li>Foyer</li>
-        <li>Extérieur</li>
-    </ul>
 
     <h2>Fonctionnalités principales</h2>
     <ul>
-        <li>🌡️ Collecte de données de qualité de l’air (température, humidité, CO₂, etc.)</li>
-        <li>📡 Transmission sans fil vers une base centrale</li>
-        <li>🗺️ Affichage des données en temps réel sur une carte interactive avec code couleur selon la qualité</li>
-        <li>📊 Export des données pour analyses et suivi</li>
+        <li>🧠 Recherche de tous les mots valides possibles selon la grille</li>
+        <li>⚡ Optimisation du score pour maximiser les points</li>
+        <li>📊 Interface simple pour sélectionner et comparer les mots</li>
+        <li>🔄 Mise à jour rapide des résultats selon les nouvelles lettres</li>
     </ul>
-
-    <h2>Technologies utilisées</h2>
-    <ul>
-        <li>Arduino et capteurs environnementaux (DHT11, capteurs CO₂)</li>
-        <li>Communication radio 433 MHz</li>
-        <li>Développement web pour la carte interactive</li>
-        <li>Impression 3D pour les boîtiers</li>
-    </ul>
-
-    <h2>Équipe</h2>
-    <p>Hugo Cossart, Fabien Gaffé, Nathan Ammeaux</p>
 
     <h2>Captures d’écran</h2>
     <div class="screenshots">
         <img src="./images/screenshot1.png" alt="Capture d’écran 1">
         <img src="./images/screenshot2.png" alt="Capture d’écran 2">
-        <img src="./images/screenshot3.png" alt="Capture d’écran 3">
     </div>
 </div>
 </body>

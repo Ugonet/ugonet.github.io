@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VoltShift – Hugo Cossart</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #343C49;
+            color: #E1E6EB;
+            margin: 0;
+            padding: 20px;
+        }
+
+        a {
+            color: #73A1FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #E1E6EB;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .back-link {
+            margin-top: 30px;
+            display: block;
+            color: #A9B1C1;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .screenshots img {
+            width: calc(50% - 8px);
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 600px) {
+            .screenshots img {
+                width: 100%;
+            }
+        }
+
+        .screenshots video {
+            width: calc(50% - 8px);
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 600px) {
+            .screenshots video {
+                width: 100%;
+            }
+        }
+
+        ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="/" class="back-link">← Retour au portfolio</a>
+    <h1>VoltShift</h1>
+    <img src="./images/illustration.png" alt="Illustration de l'application VoltShift" class="main-image">
+
+    <p><strong>Technos utilisées :</strong> Client proxy, API MITM Proxy (Python)</p>
+
+    <p><strong>Description :</strong></p>
+    <p>
+        VoltShift est une extension basée sur un proxy qui intercepte et modifie les requêtes du site Voltaire.
+        Grâce à un travail de reverse engineering, elle permet de contourner la limite imposée par la plateforme :
+        les 36 heures d’attente entre deux entraînements. Cette solution améliore considérablement l’expérience
+        d’apprentissage en supprimant les contraintes.
+    </p>
+
+    <h2>Fonctionnalités principales</h2>
+    <ul>
+        <li>⏱ Suppression de la limitation de 36h entre deux entraînements</li>
+        <li>🔍 Interception et modification des requêtes du site via proxy</li>
+        <li>🧩 Intégration transparente dans la navigation existante</li>
+        <li>⚙️ Développé grâce à MITMProxy et des règles personnalisées</li>
+    </ul>
+
+    <h2>Objectif du projet</h2>
+    <p>
+        Offrir une meilleure flexibilité aux utilisateurs de la plateforme Voltaire en leur permettant
+        d’accéder à un entraînement à tout moment, sans attendre artificiellement. VoltShift démontre comment
+        une approche technique (proxy + reverse engineering) peut contourner des limitations imposées
+        tout en restant simple à utiliser pour l’utilisateur final.
+    </p>
+</div>
+</body>
+</html>

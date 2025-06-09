@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ProNet – Hugo Cossart</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #343C49;
+            color: #E1E6EB;
+            margin: 0;
+            padding: 20px;
+        }
+
+        a {
+            color: #73A1FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #E1E6EB;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .back-link {
+            margin-top: 30px;
+            display: block;
+            color: #A9B1C1;
+        }
+
+        .main-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .screenshots img {
+            width: calc(50% - 8px);
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 600px) {
+            .screenshots img {
+                width: 100%;
+            }
+        }
+
+        .screenshots video {
+            width: calc(50% - 8px);
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 600px) {
+            .screenshots video {
+                width: 100%;
+            }
+        }
+
+        ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="/" class="back-link">← Retour au portfolio</a>
+    <h1>ProNet</h1>
+    <img src="./images/illustration.png" alt="Illustration de l'application ProNet" class="main-image">
+
+    <p><strong>Technos utilisées :</strong> Client proxy, API MITM Proxy (Python), MariaDB en local</p>
+
+    <p><strong>Description :</strong></p>
+    <p>
+        ProNet est une application complémentaire à Pronote, conçue pour enrichir l’expérience utilisateur. Grâce à un proxy interne, elle permet de modifier dynamiquement certaines informations affichées par Pronote, telles que l’emploi du temps ou les intitulés de cours, sans altérer les données officielles. L’utilisateur peut également personnaliser l’interface avec des thèmes CSS.
+    </p>
+
+    <h2>Fonctionnalités principales</h2>
+    <ul>
+        <li>🛠 Modification visuelle de l’emploi du temps via un proxy</li>
+        <li>🎨 Application de thèmes CSS personnalisés à l’interface</li>
+        <li>🧪 Expérience améliorée sans affecter les serveurs officiels</li>
+        <li>🔧 Compatible avec les versions web classiques de Pronote et l'application Pronote</li>
+    </ul>
+
+    <h2>Objectif du projet</h2>
+    <p>
+        ProNet est une application complémentaire à Pronote qui permet aux utilisateurs de modifier visuellement leur emploi du temps et de personnaliser l'apparence de l'interface grâce à un thème CSS. Elle fonctionne via un proxy interne qui intercepte et adapte les données affichées, sans modifier les informations officielles.
+    </p>
+
+    <h2>Captures d’écran</h2>
+    <div class="screenshots">
+        <img src="./images/screenshot1.png" alt="Capture d’écran 1 de l’application">
+        <video controls>
+            <source src="./images/video.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+</body>
+</html>
