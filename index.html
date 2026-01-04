@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hugo Cossart – Portfolio</title>
+    <link rel="icon" type="image/png" href="images/profil.png">
     <style>
         :root {
             --bg-main: #0f1220;
@@ -166,6 +167,78 @@
             margin-right: 14px;
         }
 
+        hr {
+            border: none;
+            height: 1px;
+            background: rgba(102, 153, 253, 0.3);
+            margin: 60px auto;
+            max-width: 300px;
+            border-radius: 1px;
+            box-shadow: 0 0 5px rgba(115,161,255,0.1);
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            padding: 30px 24px;
+            border-radius: var(--radius);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.1);
+            max-width: 500px;
+            margin: 40px auto 60px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-card h2 {
+            color: var(--text-main);
+            margin-bottom: 12px;
+            font-size: 1.8rem;
+        }
+
+        .contact-card p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            background: var(--accent);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: var(--radius);
+            transition: transform 0.2s ease, background 0.2s ease;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-btn:hover {
+            background: var(--accent-soft);
+            transform: scale(1.05);
+        }
+
+        .contact-icon {
+            width: 16px;
+            height: 16px;
+            display: block;
+            margin-right: 6px;
+        }
+
         /* Sections */
         section {
             margin-bottom: 80px;
@@ -223,6 +296,13 @@
                     <path d="M6 2a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6H6zM7 4h7v5h5v11H7V4z"/>
                 </svg>
                 CV (PDF)
+            </a>
+
+            <a class="social-link" href="ENG-CV-Hugo-Cossart-IUT-Lens.pdf" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#73A1FF" viewBox="0 0 24 24">
+                    <path d="M6 2a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6H6zM7 4h7v5h5v11H7V4z"/>
+                </svg>
+                ENGLISH CV (PDF)
             </a>
         </p>
 
@@ -313,6 +393,23 @@
             </a>
         </div>
     </section>
+
+    <hr />
+
+    <div class="contact-card">
+        <h2>Contactez-moi</h2>
+        <p>Vous pouvez me joindre directement par email ou via LinkedIn :</p>
+        <div class="contact-buttons">
+            <a href="mailto:cossarthugo@gmail.com" class="contact-btn">
+                <img src="images/email.png" alt="Email" class="contact-icon">
+                Email
+            </a>
+            <a href="https://www.linkedin.com/in/hugo-cossart/" target="_blank" class="contact-btn">
+                <img src="images/suitcase.png" alt="LinkedIn" class="contact-icon">
+                LinkedIn
+            </a>
+        </div>
+    </div>
 
     <footer class="footer">
         © 2025 Hugo Cossart
