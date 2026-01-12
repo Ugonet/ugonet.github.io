@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bruno Cossart – Responsable technique & maintenance</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #151A30;
+            margin: 0;
+            padding: 0;
+            color: #e6e8ef;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 45px 25px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 6px;
+            color: #ffffff;
+        }
+
+        header h2 {
+            font-size: 1.25rem;
+            font-weight: normal;
+            color: #7aa2ff;
+            margin-bottom: 18px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            color: #cfd3ff;
+            max-width: 680px;
+            margin: auto;
+        }
+
+        section {
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 32px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+        }
+
+        h3 {
+            font-size: 1.45rem;
+            margin-bottom: 22px;
+            color: #1f3fd1;
+        }
+
+        /* ====== CARTES FORMATIONS ====== */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background-color: #f4f6fb;
+            border-radius: 12px;
+            padding: 18px;
+            text-decoration: none;
+            color: #1f2a44;
+            font-weight: 500;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .card span {
+            font-size: 1.4rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(31,63,209,0.25);
+        }
+
+        /* ====== LISTES SIMPLES ====== */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 14px;
+        }
+
+        li a {
+            display: block;
+            text-decoration: none;
+            color: #1f2a44;
+            background-color: #f4f6fb;
+            padding: 14px 18px;
+            border-radius: 10px;
+            transition: background 0.15s ease, transform 0.15s ease;
+            font-weight: 500;
+        }
+
+        li a:hover {
+            background-color: #e8edff;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #9aa1ff;
+            margin-top: 45px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.85rem;
+            }
+
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        .confidential {
+            margin-top: 16px;
+            font-size: 0.9rem;
+            color: rgba(142, 142, 142, 0.66);
+            font-style: italic;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            opacity: 0.55;
+            flex-shrink: 0;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            background-color: #f4f6fb;
+            border-radius: 12px;
+            padding: 16px 18px;
+            text-decoration: none;
+            color: #1f2a44;
+            font-weight: 500;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            cursor: pointer;
+        }
+
+        .card-icon {
+            width: auto;
+            height: 70px;
+            flex-shrink: 0;
+            border-radius: 12px;
+        }
+
+        section small {
+            font-size: 1rem;
+            color: rgba(129, 129, 129, 0.65);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Bruno Cossart</h1>
+        <h2>Responsable technique & maintenance</h2>
+        <p>
+            Professionnel de la maintenance et de la gestion technique,
+            vous trouverez ici l’ensemble des documents attestant
+            de mon parcours, de mes compétences et de mes habilitations.
+        </p>
+
+        <p class="confidential">
+            Documents consultables uniquement dans le cadre d’un recrutement
+        </p>
+    </header>
+
+    <!-- FORMATIONS EN CARTES -->
+    <section>
+        <h3 class="section-title"><img src="bc_files/learning.png" alt="" class="section-icon"> Formations & habilitations <small>(cliquez pour visualiser)</small></h3>
+        <div class="grid">
+            <a class="card" href="bc_files/Habilitation%20électrique.pdf" target="_blank">
+                <img src="bc_files/images/NFC.png" alt="" class="card-icon">
+                Habilitation électrique
+            </a>
+            <a class="card" href="bc_files/Attestation%20fin%20de%20formation%20R482%20tondeuse%20Autoportée%20%20année%202025.pdf" target="_blank">
+                <img src="bc_files/images/tondeuse.png" alt="" class="card-icon">
+                CACES R482 – Tondeuse autoportée
+            </a>
+            <a class="card" href="bc_files/attestation%20formation%20CertiPhyto%202015.pdf" target="_blank">
+                <img src="bc_files/images/2024_certiphyto.png" alt="" class="card-icon">
+                Certification CertiPhyto
+            </a>
+            <a class="card" href="bc_files/lettre%20apiculteur%20avril%202015.pdf" target="_blank">
+                <img src="bc_files/images/apiculteur.webp" alt="" class="card-icon">
+                Stage apiculteur
+            </a>
+            <a class="card" href="bc_files/Historiques%20de%20mes%20formations%20Foederis.pdf" target="_blank">
+                <img src="bc_files/images/payment.png" alt="" class="card-icon">
+                Historique des formations
+            </a>
+        </div>
+    </section>
+
+    <!-- RECOMMANDATIONS EN LISTE -->
+    <section>
+        <h3 class="section-title"><img src="bc_files/cover-letter.png" alt="" class="section-icon"> Lettres de recommandation <small>(cliquez pour visualiser)</small></h3>
+        <ul>
+            <li><a href="bc_files/lettre%20recommandation%20de%20Mme%20Hernu.pdf" target="_blank">
+                Mme Hernu – Proviseure du LP Turgot | Roubaix (2015)
+            </a></li>
+            <li><a href="bc_files/lettre%20recommandation%20M%20Vignier.pdf" target="_blank">
+                M. Vignier - Proviseur du LP Turgot | Roubaix (2017)
+            </a></li>
+            <li><a href="bc_files/lettre%20recommandation%20M%20Ziamari.pdf" target="_blank">
+                M. Ziamari – Gestionnaire du LP Turgot | Roubaix (2017)
+            </a></li>
+        </ul>
+    </section>
+
+    <!-- ENTRETIENS EN LISTE -->
+    <section>
+        <h3 class="section-title"><img src="bc_files/meeting.png" alt="" class="section-icon"> Entretiens professionnels <small>(cliquez pour visualiser)</small></h3>
+        <ul>
+            <li><a href="bc_files/entretien%20professionnel%202018%20Lycée%20Gustave%20Eiffel%20d'Armentieres.pdf" target="_blank">2018 – Lycée Gustave Eiffel</a></li>
+            <li><a href="bc_files/entretien%20professionnel%202019%20Lycée%20Gustave%20Eiffel%20d'Armentieres.pdf" target="_blank">2019 – Lycée Gustave Eiffel</a></li>
+            <li><a href="bc_files/entretien%20professionnel%202020%20Lycée%20Gustave%20Eiffel%20d'Armentieres.pdf" target="_blank">2020 – Lycée Gustave Eiffel</a></li>
+            <li><a href="bc_files/Entretien%20professionnel%20Arzon%202022.pdf" target="_blank">2022 – Mairie d'Arzon</a></li>
+            <li><a href="bc_files/Entretien%20professionnel%20Arzon%202023.pdf" target="_blank">2023 – Mairie d'Arzon</a></li>
+            <li><a href="bc_files/Entretien%20professionnel%20Arzon%202024.pdf" target="_blank">2024 – Mairie d'Arzon</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        Mise à jour le 9 janvier 2026
+    </footer>
+
+</div>
+
+</body>
+</html>
