@@ -31,14 +31,14 @@
             <div>
                 <h1>Hugo Cossart<span class="cursor"></span></h1>
                 <p class="lead">
-                    Étudiant en BUT Informatique à Lens. Je code, je monte mes propres serveurs et
+                    Étudiant en BUT Informatique. Je code, je monte mes propres serveurs et
                     j'ouvre les applications pour voir comment elles marchent : <em>requêtes réseau,
                     API internes, protocoles</em>. Ensuite je construis mes propres outils dessus,
                     de la base de données à la mise en prod.
                 </p>
                 <div class="status">
                     <span>lieu: <b>Lille</b></span>
-                    <span>permis: <b>B</b></span>
+                    <span>mobilité: <b>permis B, véhiculé</b></span>
                 </div>
                 <div class="actions">
                     <a class="btn primary" href="https://github.com/Ugonet" target="_blank" rel="noopener noreferrer">github</a>
@@ -53,71 +53,71 @@
 
     <section id="projets">
         <div class="sec-head"><h2>ls projets/</h2><span class="hint">7 entrées</span></div>
-        <div class="projects">
 
-            <a href="projets/campusconnect/" class="proj">
-                <div class="n">01</div>
-                <div>
+        <div class="feat">
+            <a href="projets/campusconnect/" class="card">
+                <div class="thumb"><img src="projets/campusconnect/images/illustration.png" alt="" loading="lazy"></div>
+                <div class="body">
+                    <div class="kind rev">reverse engineering</div>
                     <h3>CampusConnect</h3>
-                    <p>PWA pour les étudiants de l'IUT : emploi du temps, mails, notes, notifications. Construite en reverse engineering des services internes.</p>
-                    <div class="tags"><span>Vue.js</span><span>Flask</span><span>MariaDB</span><span>Redis</span></div>
+                    <p>L'ENT de l'Université d'Artois est pénible ? J'ai regardé ce qu'il envoie sur le réseau et refait l'interface : emploi du temps, mails, notes, et les notifications qui n'existaient pas.</p>
+                    <div class="stk">Vue.js / Flask / MariaDB / Redis</div>
                 </div>
             </a>
-
-            <a href="projets/rebornapi/" class="proj">
-                <div class="n">02</div>
-                <div>
+            <a href="projets/rebornapi/" class="card">
+                <div class="thumb"><img src="projets/rebornapi/images/illustration.png" alt="" loading="lazy"></div>
+                <div class="body">
+                    <div class="kind rev">reverse engineering</div>
                     <h3>Reborn API</h3>
-                    <p>Reverse engineering de la caisse SumUp du BDE pour afficher stocks et prix en temps réel sur un écran.</p>
-                    <div class="tags"><span>React</span><span>Flask</span><span>reverse engineering</span></div>
+                    <p>La caisse SumUp du BDE ne propose pas d'API publique. J'en ai déduit une, pour afficher stocks et prix en direct sur un écran.</p>
+                    <div class="stk">React / Flask</div>
                 </div>
             </a>
-
-            <a href="projets/pronet/" class="proj">
-                <div class="n">03</div>
-                <div>
+            <a href="projets/pronet/" class="card">
+                <div class="thumb"><img src="projets/pronet/images/illustration.png" alt="" loading="lazy"></div>
+                <div class="body">
+                    <div class="kind rev">proxy</div>
                     <h3>ProNet</h3>
-                    <p>Proxy qui intercepte et modifie l'affichage de Pronote : emploi du temps et thème CSS personnalisé.</p>
-                    <div class="tags"><span>mitmproxy</span><span>Python</span><span>MariaDB</span></div>
+                    <p>Un proxy entre moi et Pronote pour changer l'emploi du temps et le thème.</p>
+                    <div class="stk">mitmproxy / Python / MariaDB</div>
                 </div>
             </a>
-
-            <a href="projets/voltshift/" class="proj">
-                <div class="n">04</div>
-                <div>
+            <a href="projets/voltshift/" class="card">
+                <div class="thumb"><img src="projets/voltshift/images/illustration.png" alt="" loading="lazy"></div>
+                <div class="body">
+                    <div class="kind rev">proxy</div>
                     <h3>VoltShift</h3>
-                    <p>Extension par proxy qui contourne la limite de 36h entre deux entraînements Voltaire, après analyse du site.</p>
-                    <div class="tags"><span>proxy</span><span>reverse engineering</span></div>
+                    <p>La limite de 36h entre deux entraînements Voltaire ? Contournée.</p>
+                    <div class="stk">proxy</div>
                 </div>
             </a>
-
-            <a href="projets/psconnect/" class="proj">
-                <div class="n">05</div>
-                <div>
+            <a href="projets/psconnect/" class="card">
+                <div class="thumb"><img src="projets/psconnect/images/illustration.png" alt="" loading="lazy"></div>
+                <div class="body">
+                    <div class="kind hw">nfc</div>
                     <h3>PSconnect</h3>
-                    <p>App mobile NFC pour un camping : lecture des badges douche, gestion des jetons et crédits, après reverse engineering des bracelets RFID.</p>
-                    <div class="tags"><span>NFC</span><span>RFID</span><span>mobile</span></div>
+                    <p>Bracelets RFID d'un camping décodés, puis une app pour gérer les crédits douche.</p>
+                    <div class="stk">NFC / mobile</div>
                 </div>
             </a>
-
-            <a href="projets/eco2stat/" class="proj">
-                <div class="n">06</div>
-                <div>
+            <a href="projets/eco2stat/" class="card">
+                <div class="thumb"><img src="projets/eco2stat/images/illustration.png" alt="" loading="lazy"></div>
+                <div class="body">
+                    <div class="kind hw">hardware</div>
                     <h3>ECO²Stat</h3>
-                    <p>Boîtiers Arduino mesurant la qualité de l'air dans le lycée, données remontées en radio sur une carte interactive.</p>
-                    <div class="tags"><span>Arduino</span><span>433 MHz</span><span>impression 3D</span><span>web</span></div>
+                    <p>Boîtiers Arduino qui mesurent l'air du lycée, en radio 433 MHz, sur une carte en direct.</p>
+                    <div class="stk">Arduino / 433 MHz / impression 3D</div>
                 </div>
             </a>
-
-            <a href="projets/wordshakerbooster/" class="proj">
-                <div class="n">07</div>
-                <div>
+            <a href="projets/wordshakerbooster/" class="card">
+                <div class="thumb"><img src="projets/wordshakerbooster/images/illustration.png" alt="" loading="lazy"></div>
+                <div class="body">
+                    <div class="kind tool">outil</div>
                     <h3>WordShaker Booster</h3>
-                    <p>Liste tous les mots valides d'une grille Word Shaker pour maximiser le score.</p>
-                    <div class="tags"><span>JavaScript</span></div>
+                    <p>Tous les mots valides d'une grille, pour le meilleur score.</p>
+                    <div class="stk">JavaScript</div>
                 </div>
             </a>
-
         </div>
     </section>
 
