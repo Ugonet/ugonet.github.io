@@ -3,86 +3,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CampusConnect – Hugo Cossart</title>
-    <style>
-        body {
-            font-family: system-ui, sans-serif;
-            background: #343C49;
-            color: #E1E6EB;
-            margin: 0;
-            padding: 20px;
-        }
-
-        a {
-            color: #73A1FF;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        h1, h2 {
-            color: #E1E6EB;
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        .back-link {
-            margin-top: 30px;
-            display: block;
-            color: #A9B1C1;
-        }
-
-        .main-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 16px;
-            margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .screenshots {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 30px 0;
-        }
-
-        .screenshots img {
-            width: calc(50% - 8px);
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (max-width: 600px) {
-            .screenshots img {
-                width: 100%;
-            }
-        }
-
-        ul {
-            font-size: 1.1em;
-            line-height: 1.6;
-            padding-left: 20px;
-        }
-    </style>
+    <title>CampusConnect - Hugo Cossart</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/style.css">
 </head>
 <body>
-<div class="container">
-    <a href="/" class="back-link">← Retour au portfolio</a>
+<div class="detail-container">
+    <a href="/" class="back-link">cd ..</a>
+    <div class="idx">projet 01/07</div>
     <h1>CampusConnect</h1>
     <img src="./images/illustration.png" alt="Illustration de l'application CampusConnect" class="main-image">
 
-    <p><strong>Technos utilisées :</strong> Vue.js (Migration depuis React), API Flask (Python), MariaDB, Redis</p>
+    <div class="tags big"><span>Vue.js (Migration depuis React)</span><span>API Flask (Python)</span><span>MariaDB</span><span>Redis</span></div>
 
     <p><strong>Description :</strong></p>
     <p>
@@ -93,10 +25,10 @@
 
     <h2>Fonctionnalités principales</h2>
     <ul>
-        <li>📅 Visualisation en temps réel de l’emploi du temps universitaire</li>
-        <li>📝 Accès aux notes et aux résultats académiques</li>
-        <li>📬 Consultation rapide des mails de la messagerie universitaire avec nouvelle interface</li>
-        <li>🔔 Ajout d’un système de notifications pour les nouveaux emails (fonctionnalité actuellement absente des outils fournis par l’université)</li>
+        <li>Visualisation en temps réel de l’emploi du temps universitaire</li>
+        <li>Accès aux notes et aux résultats académiques</li>
+        <li>Consultation rapide des mails de la messagerie universitaire avec nouvelle interface</li>
+        <li>Ajout d’un système de notifications pour les nouveaux emails (fonctionnalité actuellement absente des outils fournis par l’université)</li>
     </ul>
 
     <h2>Une interface familière et efficace</h2>
@@ -117,6 +49,10 @@
         <img src="./images/screenshot1.png" alt="Capture d’écran 1 de l’application">
         <img src="./images/screenshot2.png" alt="Capture d’écran 2 de l’application">
     </div>
+    <nav class="pager">
+        <a href="../wordshakerbooster/">&lt;- WordShaker Booster</a>
+        <a href="../rebornapi/">Reborn API -&gt;</a>
+    </nav>
 </div>
 </body>
 </html>

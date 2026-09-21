@@ -3,86 +3,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Reborn API – Hugo Cossart</title>
-    <style>
-        body {
-            font-family: system-ui, sans-serif;
-            background: #343C49;
-            color: #E1E6EB;
-            margin: 0;
-            padding: 20px;
-        }
-
-        a {
-            color: #73A1FF;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        h1, h2 {
-            color: #E1E6EB;
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-
-        .back-link {
-            margin-top: 30px;
-            display: block;
-            color: #A9B1C1;
-        }
-
-        .main-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 16px;
-            margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .screenshots {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 30px 0;
-        }
-
-        .screenshots img {
-            width: calc(50% - 8px);
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (max-width: 600px) {
-            .screenshots img {
-                width: 100%;
-            }
-        }
-
-        ul {
-            font-size: 1.1em;
-            line-height: 1.6;
-            padding-left: 20px;
-        }
-    </style>
+    <title>Reborn API - Hugo Cossart</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/style.css">
 </head>
 <body>
-<div class="container">
-    <a href="/" class="back-link">← Retour au portfolio</a>
+<div class="detail-container">
+    <a href="/" class="back-link">cd ..</a>
+    <div class="idx">projet 02/07</div>
     <h1>Reborn API</h1>
     <img src="./images/illustration.png" alt="Illustration de Reborn API" class="main-image">
 
-    <p><strong>Technos utilisées :</strong> React, API Flask (Python)</p>
+    <div class="tags big"><span>React</span><span>API Flask (Python)</span></div>
 
     <p><strong>Description :</strong></p>
     <p>
@@ -91,10 +23,10 @@
 
     <h2>Fonctionnalités principales</h2>
     <ul>
-        <li>📦 Accès en temps réel aux stocks et prix de nos produits via SumUp</li>
-        <li>💸 Affichage automatique des prix actualisés en temps réel sur écran au fil des ventes</li>
-        <li>⚙️ Intégration simplifiée avec des interfaces frontend React</li>
-        <li>🔐 API sécurisée et optimisée pour un usage sur plusieurs appareils en synchronisé</li>
+        <li>Accès en temps réel aux stocks et prix de nos produits via SumUp</li>
+        <li>Affichage automatique des prix actualisés en temps réel sur écran au fil des ventes</li>
+        <li>Intégration simplifiée avec des interfaces frontend React</li>
+        <li>API sécurisée et optimisée pour un usage sur plusieurs appareils en synchronisé</li>
     </ul>
 
     <h2>Objectif du projet</h2>
@@ -106,6 +38,10 @@
     <div class="screenshots">
         <img src="./images/screenshot1.png" alt="Capture d’écran 1 de l’application">
     </div>
+    <nav class="pager">
+        <a href="../campusconnect/">&lt;- CampusConnect</a>
+        <a href="../pronet/">ProNet -&gt;</a>
+    </nav>
 </div>
 </body>
 </html>
